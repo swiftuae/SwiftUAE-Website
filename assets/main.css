@@ -360,6 +360,65 @@ body.is-instant:after {
 	white-space: nowrap;
 }
 
+.topNav {
+	overflow: hidden;
+	background-color: #172132;
+	padding: 10px;
+}
+
+#navButton {
+	float: right;
+	display: block;
+}
+
+#svgColour rect {
+	fill: #FFFFFF;
+}
+
+#nav-links a {
+	color: #fff;
+}
+
+.hamburger {
+	float: right;
+	display: block;
+	font-size: 4rem;
+	user-select: none;
+	color: #FFFFFF;
+	cursor: grab;
+}
+	
+.menu {
+	display:none;
+	right: 0;
+	left: 0;
+	text-align: center;
+	padding: 16px 0;
+	width: 100%;
+	padding-top: 4.5rem;
+}
+	
+.menu li:hover {
+	display: inline-block;
+	transition: 0.3s ease;
+}
+
+.menu a {
+	font-family: 'Inter', sans-serif;
+	text-decoration: none;
+}
+	
+.menu li + li {
+	margin-top: 15px;
+}
+
+input[type=checkbox] {
+	display: none;
+} 
+	
+input[type=checkbox]:checked ~ .menu {
+	display: block;
+}
 #navLink {
 	gap: 0.75rem;
 	flex-direction: column;
@@ -478,6 +537,8 @@ body.is-instant:after {
 #image06 .frame {
 	width: 8.375rem;
 	transition: none;
+	float: left;
+	padding-left: 1rem;
 }
 
 #image06 img {
@@ -979,6 +1040,13 @@ body.is-instant:after {
 	width: 100%;
 }
 
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
 #container19 {
 	--alignment: center;
 	--flex-alignment: center;
@@ -990,7 +1058,6 @@ body.is-instant:after {
 	align-items: center;
 	justify-content: flex-start;
 	background-attachment: scroll;
-	background-image: url('images/container19.png');
 	background-color: #23386C;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1431,6 +1498,7 @@ body.is-instant:after {
 	align-items: center;
 	justify-content: center;
 	background-color: #FFFFFF;
+	padding-bottom: 5em;
 }
 
 #container14:not(:last-child) {

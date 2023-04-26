@@ -18,55 +18,45 @@
 			<div id="main">
 				<div class="inner">
 					<header id="header">
-						<div id="desktopTopNav" class="container columns full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-										<div id="image06" class="image">
-											<span class="frame"><img src="assets/images/image06.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-									</div>
-									<div>
-										<ul id="icons01" class="mobileMenuIcon icons">
-											<li>
-												<a class="n01" href="#" aria-label="Menu">
-													<svg><use xlink:href="assets/icons.svg#menu"></use></svg>
-													<span class="label">Menu</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+						<ul id="nav-links" class="topNav container columns full screen">
+							<div id="image06" class="image">
+								<span class="frame"><img src="assets/images/image06.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
 							</div>
-						</div>
-						<div id="topNav" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<ul id="navLink" class="navLinkHidden buttons">
-										<li>
-											<a href="#start" class="button n01">About</a>
-										</li><li>
-											<a href="#curriculum" class="button n02">Course Outline</a>
-										</li><li>
-											<a href="#registration" class="button n03">Important Dates</a>
-										</li><li>
-											<a href="#organisers" class="button n04">Learn</a>
-										</li><li>
-											<a href="https://domain.ext/path" class="button n05">iOS Design Challenge</a>
-										</li><li>
-											<a href="https://domain.ext/path" class="button n06">FAQ</a>
-										</li><li>
-											<a href="https://domain.ext/path" class="button n07">The Team</a>
-										</li>
-									</ul>
-								</div>
+
+							<input type="checkbox" id="checkbox_toggle" />
+							<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+							<div class="menu">
+								<li>
+									<a href="#about">About</a>
+								</li><li>
+									<a href="#outline">Course Outline</a>
+								</li><li>
+									<a href="#dates">Important Dates</a>
+								</li><li>
+									<a href="#learn">Learn</a>
+								</li><li>
+									<a href="#signup">Sign Up</a>
+								</li><li>
+									<a href="https://domain.ext/path">iOS Design Challenge</a>
+								</li><li>
+									<a href="#faq">FAQ</a>
+								</li><li>
+									<a href="https://domain.ext/path">The Team</a>
+								</li>
 							</div>
-						</div>
+						</ul>
 					</header>
 					<section id="start-section">
 						<div id="container19" class="container columns full screen">
 							<div class="wrapper">
+								<div class="video">
+									<video playsinline autoplay muted loop>
+										<source src="assets/Animations/TronAnim.mp4">
+									</video>
+								</div>
 								<div class="inner">
+									
 									<div>
 										<h1 id="text28">Swift Accelerator Programme</h1>
 										<hr id="divider23">
@@ -108,7 +98,7 @@
 											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMjE2IDE5MTciIHdpZHRoPSIyMjE2IiBoZWlnaHQ9IjE5MTciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B" data-src="assets/images/image07.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
 										</div>
 										<hr id="divider08">
-										<div id="text05" class="hehe">
+										<div id="text05">
 											<p>Basics of Swift coding</p>
 										</div>
 									</div>
@@ -118,7 +108,7 @@
 										</div>
 										<hr id="divider11">
 										<div id="text10">
-											<span class="p">Setting up the<br />development environment</span>
+											<p>Setting up the development environment</p>
 										</div>
 									</div>
 									<div>
@@ -212,7 +202,7 @@
 							</div>
 						</div>
 						<hr id="divider17">
-						<div id="aboutBlock" class="container default full screen">
+						<div id="aboutBlock" class="container default full screen" data-scroll-id="next" data-scroll-behavior="default" data-scroll-offset="0">
 							<div class="wrapper">
 								<div class="inner">
 									<hr id="divider06">
@@ -221,7 +211,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="container15" class="container columns full screen">
+						<div id="container15" class="container columns full screen" data-scroll-id="signup" data-scroll-behavior="default" data-scroll-offset="0">
 							<div class="wrapper">
 								<div class="inner">
 									<div>
