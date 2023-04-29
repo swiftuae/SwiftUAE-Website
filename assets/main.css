@@ -551,6 +551,12 @@ input[type=checkbox]:checked ~ .menu {
 	transition: none;
 }
 
+.outline_images .frame {
+	height: 170px;
+	width: 100%;
+	object-fit: fill !important;
+}
+
 #image07 .frame {
 	max-width: 100%;
 	width: auto;
@@ -585,6 +591,15 @@ input[type=checkbox]:checked ~ .menu {
 	transition: none;
 }
 
+#image08 img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+	width: 100% !important;
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+
 #image13 .frame {
 	max-width: 100%;
 	width: auto;
@@ -598,6 +613,15 @@ input[type=checkbox]:checked ~ .menu {
 
 #image13 .frame img {
 	transition: none;
+}
+
+#image13 img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+	width: 100% !important;
+	-webkit-touch-callout: none;
+	user-select: none;
 }
 
 #image14 .frame {
@@ -615,6 +639,15 @@ input[type=checkbox]:checked ~ .menu {
 	transition: none;
 }
 
+#image14 img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+	width: 100% !important;
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+
 #image15 .frame {
 	max-width: 100%;
 	width: 212px;
@@ -628,6 +661,15 @@ input[type=checkbox]:checked ~ .menu {
 
 #image15 .frame img {
 	transition: none;
+}
+
+#image15 img {
+	height: 100% !important;
+	object-fit: cover;
+	object-position: center;
+	width: 100% !important;
+	-webkit-touch-callout: none;
+	user-select: none;
 }
 
 #image02 .frame {
@@ -1042,10 +1084,16 @@ input[type=checkbox]:checked ~ .menu {
 }
 
 .video {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
-	height: 100%;
+	height: auto;
+	width: 100%
+}
+
+.video-overlay {
+	position: absolute;
+	z-index: 2;
 }
 
 #container19 {
@@ -1785,6 +1833,18 @@ input[type=checkbox]:checked ~ .menu {
 	height: 100%;
 	position: absolute;
 	width: 100%;
+}
+
+.col-container {
+	display: table;
+	width: 100%;
+	border-spacing: 50px;
+}
+
+.col {
+	width: 15%;
+	display: table-cell;
+	vertical-align: top;
 }
 
 #container11 {
@@ -3291,7 +3351,7 @@ hr:before {
 }
 
 #divider19:before {
-	height: 1rem;
+	height: 2rem;
 	border-left: solid 1px transparent;
 	width: 1px;
 }
@@ -3466,6 +3526,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+.text-overlay {
+	top: 0px;
+	margin-bottom: 60%;
+}
+
 #text28 {
 	text-align: left;
 	color: #FFFFFF;
@@ -3473,6 +3538,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-size: 3.625em;
 	line-height: 1.5;
 	font-weight: 700;
+	max-width: 70%;
+	padding: 70px;
+	top: 10px;
+	right: 10px;
 }
 
 #text28 a {
@@ -3530,8 +3599,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text05 {
-	display: block;
-	height: 5em;
+	height: 6em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
@@ -3560,6 +3631,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text10 {
+	height: 6em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
@@ -3589,6 +3664,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text19 {
+	height: 6em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
@@ -3616,6 +3695,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text20 {
+	height: 6em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
@@ -3643,6 +3726,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text21 {
+	height: 6em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
@@ -3691,12 +3778,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text11 {
+	height: 7em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #F05E59;
 	font-family: 'Inter', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 #text11 a {
@@ -3739,12 +3831,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text15 {
+	height: 7em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #F05E59;
 	font-family: 'Inter', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 #text15 a {
@@ -3787,12 +3884,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text22 {
+	height: 7em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #F05E59;
 	font-family: 'Inter', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 #text22 a {
@@ -3835,12 +3937,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text24 {
+	height: 7em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #F05E59;
 	font-family: 'Inter', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 #text24 a {
@@ -3883,12 +3990,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text25 {
+	height: 7em;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 	text-align: center;
 	color: #F05E59;
 	font-family: 'Inter', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 #text25 a {
@@ -6699,7 +6811,7 @@ form .actions button:disabled {
 	#text28 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 3.5em;
+		font-size: 2em;
 		line-height: 1.5;
 	}
 	
@@ -7186,7 +7298,7 @@ form .actions button:disabled {
 	}
 	
 	#text28 {
-		font-size: 3.5em;
+		font-size: 2em;
 	}
 	
 	#text34 {
