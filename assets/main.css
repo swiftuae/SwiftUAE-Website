@@ -1084,16 +1084,21 @@ input[type=checkbox]:checked ~ .menu {
 }
 
 .video {
-	position: relative;
-	top: 0;
-	left: 0;
+	position: absolute;
+	top: 0px;
+}
+
+.video video {
 	height: auto;
-	width: 100%
+	width: 100%;
 }
 
 .video-overlay {
 	position: absolute;
 	z-index: 2;
+	top: 5px;
+	left: 5px;
+	padding: 70px;
 }
 
 #container19 {
@@ -1839,6 +1844,8 @@ input[type=checkbox]:checked ~ .menu {
 	display: table;
 	width: 100%;
 	border-spacing: 50px;
+
+	overflow-x: auto;
 }
 
 .col {
@@ -1856,6 +1863,8 @@ input[type=checkbox]:checked ~ .menu {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
+
+	overflow-x: auto !important;
 }
 
 #container11:not(:last-child) {
@@ -3526,22 +3535,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-.text-overlay {
-	top: 0px;
-	margin-bottom: 60%;
-}
-
 #text28 {
 	text-align: left;
 	color: #FFFFFF;
 	font-family: 'Inter', sans-serif;
-	font-size: 3.625em;
+	font-size: 3.2em;
 	line-height: 1.5;
 	font-weight: 700;
 	max-width: 70%;
-	padding: 70px;
-	top: 10px;
-	right: 10px;
 }
 
 #text28 a {
@@ -4343,6 +4344,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #list01 details {
 	color: #353535;
 	padding-bottom: 10px;
+	cursor: grab;
 }
 
 #list01 summary {
@@ -4811,7 +4813,11 @@ form .actions button:disabled {
 		font-size: 11pt;
 	}
 	
-	
+	#container15 {
+		align-items: center !important;
+		align-content: center !important;
+		text-align: center !important;
+	}
 	
 	#wrapper {
 		padding: 0 0 0rem 0;
@@ -4901,6 +4907,7 @@ form .actions button:disabled {
 	
 	#image02 .frame {
 		width: 15rem;
+		display: none;
 	}
 	
 	#image01 .frame {
@@ -6076,7 +6083,9 @@ form .actions button:disabled {
 		width: 100% !important;
 	}
 	
-	
+	#aboutBlock {
+		padding-bottom: 2rem;
+	}
 	
 	#aboutBlock > .wrapper > .inner {
 		--gutters: 2rem;
@@ -6167,7 +6176,11 @@ form .actions button:disabled {
 		width: auto;
 	}
 	
-	
+	#container15 {
+		align-items: center !important;
+		align-content: center !important;
+		text-align: center !important;
+	}
 	
 	#container15 > .wrapper > .inner {
 		--gutters: 2rem;
@@ -6811,8 +6824,16 @@ form .actions button:disabled {
 	#text28 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 2em;
+		font-size: 1.5em;
 		line-height: 1.5;
+	}
+
+	.video-overlay {
+		position: absolute;
+		z-index: 2;
+		top: 5px;
+		left: 5px;
+		padding: 40px;
 	}
 	
 	#text34 {
@@ -6958,7 +6979,7 @@ form .actions button:disabled {
 	#text12 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 2.75em;
+		font-size: 2em;
 		line-height: 1.5;
 	}
 	
@@ -7059,6 +7080,14 @@ form .actions button:disabled {
 }
 
 @media (max-width: 480px) {
+
+	#container15 {
+		align-items: center !important;
+		align-content: center !important;
+		text-align: center !important;
+	}
+	
+
 	#wrapper {
 		padding: 0 0 0rem 0;
 	}
@@ -7153,6 +7182,17 @@ form .actions button:disabled {
 }
 
 @media (max-width: 360px) {
+	#container15 {
+		--alignment: center;
+		--flex-alignment: center;
+		--indent-left: 1;
+		--indent-right: 1;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
 	#wrapper {
 		padding: 0 0 0rem 0;
 	}
@@ -7298,7 +7338,15 @@ form .actions button:disabled {
 	}
 	
 	#text28 {
-		font-size: 2em;
+		font-size: 1.4em;
+	}
+
+	.video-overlay {
+		position: absolute;
+		z-index: 2;
+		top: 5px;
+		left: 5px;
+		padding: 30px;
 	}
 	
 	#text34 {
