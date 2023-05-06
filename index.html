@@ -36,13 +36,13 @@
 								</li><li>
 									<a href="#learn">Learn</a>
 								</li><li>
-									<a href="#signup">Sign Up</a>
-								</li><li>
-									<a href="https://domain.ext/path">iOS Design Challenge</a>
-								</li><li>
 									<a href="#faq">FAQ</a>
 								</li><li>
 									<a href="https://domain.ext/path">The Team</a>
+								</li><li>
+									<a href="#signup">Sign Up</a>
+								</li><li>
+									<a href="https://domain.ext/path">iOS Design Challenge</a>
 								</li>
 							</div>
 						</ul>
@@ -50,12 +50,23 @@
 					<section id="start-section">
 						<div id="container19" class="container columns full screen">
 							<div class="video">
-								<video playsinline autoplay muted loop>
+								<video playsinline autoplay muted loop id="tron-anim">
 									<source src="assets/Animations/TronAnim.mp4">
 								</video>
 							</div>
-							<h1 id="text28" class="video-overlay">Swift Accelerator Programme</h1>
+							<h1 id="text28" class="video-overlay">Swift Accelerator Programme UAE</h1>
+							<!-- <div class="container columns hero-btn-container">
+								<button class="hero-button" id="login">Login</button>
+								<button class="hero-button" id="findout">Find out more</button>
+							</div> -->
 						</div>
+						<script>
+							const videoHeight = document.getElementById("tron-anim")
+							const container = document.getElementById("container19")
+							console.log(getComputedStyle(videoHeight).height)
+							container.style.setProperty("height", getComputedStyle(videoHeight).height, "important")
+						</script>
+
 						<div id="container02" data-scroll-id="about" data-scroll-behavior="default" data-scroll-offset="0" class="container columns full screen">
 							<div class="wrapper">
 								<div class="inner">
@@ -208,7 +219,8 @@
 										<h3 id="text12">How do I sign up?</h3>
 										<p id="text18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										<hr id="divider16">
-										<form enctype="multipart/form-data" id="form01" method="post" action="#">
+										<script type="text/javascript" src="https://form.jotform.com/jsform/231222294317045"></script>
+										<!-- <form enctype="multipart/form-data" id="form01" method="post" action="#">
 											<div class="inner">
 												<div class="field">
 													<input type="email" name="enter-your-email-address" id="form01-enter-your-email-address" placeholder="Enter your email address..." maxlength="128" required />
@@ -218,7 +230,7 @@
 												</div>
 											</div>
 											<input type="hidden" name="id" value="form01" />
-										</form>
+										</form> -->
 									</div>
 									<div>
 										<hr id="divider10">

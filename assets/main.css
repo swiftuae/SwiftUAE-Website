@@ -375,6 +375,10 @@ body.is-instant:after {
 	fill: #FFFFFF;
 }
 
+#nav-links {
+	align-items: center;
+}
+
 #nav-links a {
 	color: #fff;
 }
@@ -536,7 +540,7 @@ input[type=checkbox]:checked ~ .menu {
 }
 
 #image06 .frame {
-	width: 8.375rem;
+	width: 10rem;
 	transition: none;
 	float: left;
 	padding-left: 1rem;
@@ -1098,7 +1102,8 @@ input[type=checkbox]:checked ~ .menu {
 	z-index: 2;
 	top: 5px;
 	left: 5px;
-	padding: 70px;
+	padding-top: 70px;
+	padding-left: 70px;
 }
 
 #container19 {
@@ -1108,6 +1113,7 @@ input[type=checkbox]:checked ~ .menu {
 	--indent-right: 1;
 	display: flex;
 	width: 100%;
+	height: auto;
 	min-height: var(--viewport-height);
 	align-items: center;
 	justify-content: flex-start;
@@ -1251,6 +1257,32 @@ input[type=checkbox]:checked ~ .menu {
 
 #container19 > .wrapper > .inner > :nth-child(2) {
 	width: calc(20% + (var(--gutters) / 2));
+}
+
+.hero-btn-container {
+	padding-left: 70px;
+}
+
+.hero-button {
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 40px;
+	font-weight: 700;
+}
+
+.hero-button#login {
+	background-color: #F47E3A;
+}
+
+.hero-button#findout {
+	background-color: #F4453A;
 }
 
 #container02 {
@@ -3542,7 +3574,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-size: 3.2em;
 	line-height: 1.5;
 	font-weight: 700;
-	max-width: 70%;
+	max-width: 60%;
 }
 
 #text28 a {
@@ -4805,6 +4837,13 @@ form .actions button:disabled {
 @media (max-width: 980px) {
 	html {
 		font-size: 11pt;
+	}
+
+	#text28 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 2.5em;
+		line-height: 1.5;
 	}
 }
 
@@ -6828,12 +6867,26 @@ form .actions button:disabled {
 		line-height: 1.5;
 	}
 
+	.hero-button {
+		border: none;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 0.7em;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 40px;
+	}
+
 	.video-overlay {
 		position: absolute;
 		z-index: 2;
 		top: 5px;
 		left: 5px;
-		padding: 40px;
+		padding-top: 40px;
+		padding-left: 40px;
 	}
 	
 	#text34 {
@@ -7346,7 +7399,8 @@ form .actions button:disabled {
 		z-index: 2;
 		top: 5px;
 		left: 5px;
-		padding: 30px;
+		padding-top: 30px;
+		padding-left: 30px;
 	}
 	
 	#text34 {
