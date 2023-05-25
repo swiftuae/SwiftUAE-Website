@@ -9,10 +9,23 @@
 
 .section-title {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Inter', sans-serif;
     padding-bottom: 20px;
     color: white;
+}
+
+.section-subtitle {
+    font-weight: 650;
+    font-size: 1.9rem;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.subsection-container {
+    padding-top: 20px;
+    padding-bottom: 25px;
 }
 
 .grid-container {
