@@ -1,66 +1,78 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-		<title>Swift Accelerator UAE</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta name="color-scheme" content="light only" />
-		<meta name="description" content="For the Swift Accelerator Program in the UAE" />
-		<meta property="og:site_name" content="Swift Accelerator UAE" />
-		<meta property="og:title" content="Swift Accelerator UAE" />
-		<meta property="og:type" content="website" />
-		<meta property="og:description" content="For the Swift Accelerator Program in the UAE" />
-		<link href="https://fonts.googleapis.com/css?display=swap&family=Montserrat:800,800italic,700,700italic%7CInter:700,700italic,300,300italic,600,600italic,400,400italic,500,500italic,800,800italic" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="assets/main.css" />
-	</head>
-	<body onresize="resize()" onload="resize()">
-		<div id="wrapper">
-			<div id="main">
-				<div class="inner">
-					<header id="header">
-						<ul id="nav-links" class="topNav container columns full screen">
-							<div id="image06" class="image">
-								<span class="frame"><img src="assets/images/image06.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-							</div>
 
-							<input type="checkbox" id="checkbox_toggle" />
-							<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+<head>
+	<title>Swift Accelerator UAE</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="color-scheme" content="light only" />
+	<meta name="description" content="For the Swift Accelerator Program in the UAE" />
+	<meta property="og:site_name" content="Swift Accelerator UAE" />
+	<meta property="og:title" content="Swift Accelerator UAE" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="For the Swift Accelerator Program in the UAE" />
+	<link
+		href="https://fonts.googleapis.com/css?display=swap&family=Montserrat:800,800italic,700,700italic%7CInter:700,700italic,300,300italic,600,600italic,400,400italic,500,500italic,800,800italic"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/main.css" />
+</head>
 
-							<div class="menu">
-								<li>
-									<a href="#about">About</a>
-								</li><li>
-									<a href="#outline">Course Outline</a>
-								</li><li>
-									<a href="#dates">Important Dates</a>
-								</li><li>
-									<a href="#learn">Learn</a>
-								</li><li>
-									<a href="#faq">FAQ</a>
-								</li><li>
-									<a href="https://swiftuae.org/theteam.html">The Team</a>
-								</li><li>
-									<a href="https://form.jotform.com/231222294317045">Sign Up</a>
-								</li><li>
-									<a href="https://iosdesign.ae">iOS Design Challenge</a>
-								</li>
-							</div>
-						</ul>
-					</header>
-					<section id="start-section">
-						<div id="hero-container" class="container columns full screen">
-							<div class="video">
-								<video playsinline autoplay muted loop id="tron-anim">
-									<source src="assets/Animations/TronAnim.mp4">
-								</video>
-							</div>
-							<h1 id="text28" class="video-overlay">Swift Accelerator Programme UAE</h1>
-							<!-- <div class="container columns hero-btn-container">
+<body onresize="resize()" onload="resize()">
+	<div id="wrapper">
+		<div id="main">
+			<div class="inner">
+				<header id="header">
+					<ul id="nav-links" class="topNav container columns full screen">
+						<div id="image06" class="image">
+							<span class="frame"><img src="assets/images/image06.png" alt=""
+									oncontextmenu="return false;" ondragstart="return false;" /></span>
+						</div>
+
+						<input type="checkbox" id="checkbox_toggle" />
+						<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+						<div class="menu">
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#outline">Course Outline</a>
+							</li>
+							<li>
+								<a href="#dates">Important Dates</a>
+							</li>
+							<li>
+								<a href="#learn">Learn</a>
+							</li>
+							<li>
+								<a href="#faq">FAQ</a>
+							</li>
+							<li>
+								<a href="/theteam.html">The Team</a>
+							</li>
+							<li>
+								<a href="https://form.jotform.com/231222294317045">Sign Up</a>
+							</li>
+							<li>
+								<a href="https://iosdesign.ae">iOS Design Challenge</a>
+							</li>
+						</div>
+					</ul>
+				</header>
+				<section id="start-section">
+					<div id="hero-container" class="container columns full screen">
+						<div class="video">
+							<video playsinline autoplay muted loop id="tron-anim">
+								<source src="assets/Animations/TronAnim.mp4">
+							</video>
+						</div>
+						<h1 id="text28" class="video-overlay">Swift Accelerator Programme UAE</h1>
+						<!-- <div class="container columns hero-btn-container">
 								<button class="hero-button" id="login">Login</button>
 								<button class="hero-button" id="findout">Find out more</button>
 							</div> -->
-						</div>
-						<!-- <div id="container19" class="container columns full screen">
+					</div>
+					<!-- <div id="container19" class="container columns full screen">
 							<div class="video">
 								<video playsinline autoplay muted loop id="tron-anim">
 									<source src="assets/Animations/TronAnim.mp4">
@@ -72,274 +84,307 @@
 								<button class="hero-button" id="findout">Find out more</button>
 							</div>
 						</div> -->
-						<script>
+					<script>
+						const videoHeight = document.getElementById("tron-anim")
+						const container = document.getElementById("hero-container")
+						container.style.setProperty("height", getComputedStyle(videoHeight).height, "important")
+
+						function resize() {
 							const videoHeight = document.getElementById("tron-anim")
 							const container = document.getElementById("hero-container")
 							container.style.setProperty("height", getComputedStyle(videoHeight).height, "important")
-							
-							function resize() {
-								const videoHeight = document.getElementById("tron-anim")
-								const container = document.getElementById("hero-container")
-								container.style.setProperty("height", getComputedStyle(videoHeight).height, "important")
-							}
-						</script>
+						}
+					</script>
 
-						<div id="container02" data-scroll-id="about" data-scroll-behavior="default" data-scroll-offset="0" class="container columns full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-										<h3 id="text30">About Swift Accelerator Programme</h3>
+					<div id="container02" data-scroll-id="about" data-scroll-behavior="default" data-scroll-offset="0"
+						class="container columns full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+									<h3 id="text30">About Swift Accelerator Programme</h3>
+								</div>
+								<div>
+									<p id="text31">This selective app development course is designed to teach students
+										aged 13-18 the basics of Swift coding and app development. Students will build
+										and release iOS apps to the App Store, giving them a real-world experience of
+										the app development process.</p>
+									<p id="text17">Contact: <a href="mailto:hello@swiftuae.org">hello@swiftuae.org</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="container09" data-scroll-id="outline" data-scroll-behavior="default" data-scroll-offset="0"
+						class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<hr id="divider12">
+								<hr id="divider14">
+								<h3 id="text34">Course Outline</h3>
+								<p id="text23">What students can expect from the course:</p>
+								<hr id="divider19">
+							</div>
+						</div>
+					</div>
+					<div id="container14" class="container columns full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+									<div id="image07" class="image outline_images" data-position="center">
+										<span class="frame deferred"><img
+												src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMjE2IDE5MTciIHdpZHRoPSIyMjE2IiBoZWlnaHQ9IjE5MTciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B"
+												data-src="assets/images/image07.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
 									</div>
-									<div>
-										<p id="text31">This selective app development course is designed to teach students aged 13-18 the basics of Swift coding and app development. Students will build and release iOS apps to the App Store, giving them a real-world experience of the app development process.</p>
-										<p id="text17">Contact: <a href="mailto:hello@swiftuae.org">hello@swiftuae.org</a></p>
+									<hr id="divider08">
+									<div id="text05">
+										<p>Basics of Swift coding</p>
+									</div>
+								</div>
+								<div>
+									<div id="image08" class="image outline_images">
+										<span class="frame deferred"><img
+												src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMTgxIDE4MTMiIHdpZHRoPSIyMTgxIiBoZWlnaHQ9IjE4MTMiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B"
+												data-src="assets/images/image08.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+									<hr id="divider11">
+									<div id="text10">
+										<p>Setting up the development environment</p>
+									</div>
+								</div>
+								<div>
+									<div id="image13" class="image outline_images">
+										<span class="frame deferred"><img
+												src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMjQzIDE4NzkiIHdpZHRoPSIyMjQzIiBoZWlnaHQ9IjE4NzkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B"
+												data-src="assets/images/image13.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+									<hr id="divider28">
+									<div id="text19">
+										<p>Designing and building an iOS app</p>
+									</div>
+								</div>
+								<div>
+									<div id="image14" class="image outline_images">
+										<span class="frame"><img src="assets/images/image14.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+									<hr id="divider30">
+									<div id="text20">
+										<p>Testing and debugging</p>
+									</div>
+								</div>
+								<div>
+									<div id="image15" class="image outline_images">
+										<span class="frame"><img src="assets/images/image15.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+									<hr id="divider31">
+									<div id="text21">
+										<p>Submitting an app to the App Store</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div id="container09" data-scroll-id="outline" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<hr id="divider12">
-									<hr id="divider14">
-									<h3 id="text34">Course Outline</h3>
-									<p id="text23">What students can expect from the course:</p>
-									<hr id="divider19">
-								</div>
+					</div>
+					<hr id="divider07">
+					<div id="container10" data-scroll-id="dates" data-scroll-behavior="default" data-scroll-offset="0"
+						class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<hr id="divider32">
+								<h2 id="text02">Important Dates</h2>
+								<hr id="divider18">
 							</div>
-						</div>
-						<div id="container14" class="container columns full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-										<div id="image07" class="image outline_images" data-position="center">
-											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMjE2IDE5MTciIHdpZHRoPSIyMjE2IiBoZWlnaHQ9IjE5MTciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B" data-src="assets/images/image07.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider08">
-										<div id="text05">
-											<p>Basics of Swift coding</p>
-										</div>
-									</div>
-									<div>
-										<div id="image08" class="image outline_images">
-											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMTgxIDE4MTMiIHdpZHRoPSIyMTgxIiBoZWlnaHQ9IjE4MTMiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B" data-src="assets/images/image08.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider11">
-										<div id="text10">
-											<p>Setting up the development environment</p>
-										</div>
-									</div>
-									<div>
-										<div id="image13" class="image outline_images">
-											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAyMjQzIDE4NzkiIHdpZHRoPSIyMjQzIiBoZWlnaHQ9IjE4NzkiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9InRyYW5zcGFyZW50IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8%2BPC9zdmc%2B" data-src="assets/images/image13.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider28">
-										<div id="text19">
-											<p>Designing and building an iOS app</p>
-										</div>
-									</div>
-									<div>
-										<div id="image14" class="image outline_images">
-											<span class="frame"><img src="assets/images/image14.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider30">
-										<div id="text20">
-											<p>Testing and debugging</p>
-										</div>
-									</div>
-									<div>
-										<div id="image15" class="image outline_images">
-											<span class="frame"><img src="assets/images/image15.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider31">
-										<div id="text21">
-											<p>Submitting an app to the App Store</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr id="divider07">
-						<div id="container10" data-scroll-id="dates" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<hr id="divider32">
-									<h2 id="text02">Important Dates</h2>
-									<hr id="divider18">
-								</div>
 
+							<div id="container14" class="container columns full screen">
+								<div class="wrapper">
+									<div class="inner">
+										<!-- <div class="col-container"> -->
+										<div class="col">
+											<p id="text11">Bridging programme</p>
+											<p id="text14">May 2023</p>
+										</div>
+										<div class="col">
+											<p id="text15">Face to face classes</p>
+											<p id="text27"><span class="p">May 2023 to June 2023,<br />Weekends</span>
+											</p>
+										</div>
+										<div class="col">
+											<p id="text22">Online classes</p>
+											<p id="text29">July – Aug 2023</p>
+										</div>
+										<div class="col">
+											<p id="text24">App development hackathon</p>
+											<p id="text32">Aug – Sep 2023</p>
+										</div>
+										<div class="col">
+											<p id="text25">Showcase and finale</p>
+											<p id="text26">Oct 2023</p>
+										</div>
+										<!-- </div> -->
+									</div>
+								</div>
+							</div>
+
+							<hr id="divider07">
+						</div>
+					</div>
+					<hr id="divider26" data-scroll-id="learn" data-scroll-behavior="default" data-scroll-offset="0">
+					<hr id="divider45">
+					<div id="container12" class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<h3 id="text13">Learn</h3>
+								<hr id="divider02">
+								<!-- <p id="comingSoonText">Coming Soon!</p> -->
 								<div id="container14" class="container columns full screen">
 									<div class="wrapper">
 										<div class="inner">
-											<!-- <div class="col-container"> -->
-												<div class="col">
-													<p id="text11">Bridging programme</p>
-													<p id="text14">May 2023</p>
-												</div>
-												<div class="col">
-													<p id="text15">Face to face classes</p>
-													<p id="text27"><span class="p">May 2023 to June 2023,<br />Weekends</span></p>
-												</div>
-												<div class="col">
-													<p id="text22">Online classes</p>
-													<p id="text29">July – Aug 2023</p>
-												</div>
-												<div class="col">
-													<p id="text24">App development hackathon</p>
-													<p id="text32">Aug – Sep 2023</p>
-												</div>
-												<div class="col">
-													<p id="text25">Showcase and finale</p>
-													<p id="text26">Oct 2023</p>
-												</div>
-											<!-- </div> -->
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/KKAFepI1QjY"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe>
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/sB6diTfZsJI"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe>
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/48PJEZLAJMw"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe>
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/Et2Xqv74hS8"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe>
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/CFG0gzq3R3M"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen></iframe>
 										</div>
 									</div>
 								</div>
+								<hr id="divider02">
+							</div>
+						</div>
+					</div>
+					<div id="container08" class="container columns full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+								</div>
+								<div>
+								</div>
+								<div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr id="divider17">
+					<div id="aboutBlock" class="container default full screen" data-scroll-id="next"
+						data-scroll-behavior="default" data-scroll-offset="0">
+						<div class="wrapper">
+							<div class="inner">
+								<hr id="divider06">
+								<h3 id="text06">Find out more</h3>
+							</div>
+						</div>
+					</div>
+					<div id="container15" class="container columns full screen" data-scroll-id="signup"
+						data-scroll-behavior="default" data-scroll-offset="0">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+									<p id="text18">Fill in the Form below to indicate your interest in joining!</p>
+									<hr id="divider16">
 
-								<hr id="divider07">
-							</div>
-						</div>
-						<hr id="divider26" data-scroll-id="learn" data-scroll-behavior="default" data-scroll-offset="0">
-						<hr id="divider45">
-						<div id="container12" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<h3 id="text13">Learn</h3>
-									<hr id="divider02">
-									<!-- <p id="comingSoonText">Coming Soon!</p> -->
-									<div id="container14" class="container columns full screen">
-										<div class="wrapper">
-											<div class="inner">
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/KKAFepI1QjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>												
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/sB6diTfZsJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>										
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/48PJEZLAJMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/Et2Xqv74hS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-												<iframe width="560" height="315" src="https://www.youtube.com/embed/CFG0gzq3R3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-											</div>
-										</div>
-									</div>
-									<hr id="divider02">
-								</div>
-							</div>
-						</div>
-						<div id="container08" class="container columns full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-									</div>
-									<div>
-									</div>
-									<div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<hr id="divider17">
-						<div id="aboutBlock" class="container default full screen" data-scroll-id="next" data-scroll-behavior="default" data-scroll-offset="0">
-							<div class="wrapper">
-								<div class="inner">
-									<hr id="divider06">
-									<h3 id="text06">Find out more</h3>
-								</div>
-							</div>
-						</div>
-						<div id="container15" class="container columns full screen" data-scroll-id="signup" data-scroll-behavior="default" data-scroll-offset="0">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-										<p id="text18">Fill in the Form below to indicate your interest in joining!</p>
-										<hr id="divider16">
-										
-										<iframe
-											id="JotFormIFrame-231222294317045"
-											title="Swift Accelerator UAE Signups"
-											onload="window.parent.scrollTo(0,0)"
-											allowtransparency="true"
-											allowfullscreen="true"
-											allow="geolocation; microphone; camera"
-											src="https://form.jotform.com/231222294317045"
-											frameborder="0"
-											style="min-width:100%;max-width:100%;border:none;"
-											scrolling="yes"
-											height="300"
-										>
-										</iframe>
-										<script type="text/javascript">
+									<iframe id="JotFormIFrame-231222294317045" title="Swift Accelerator UAE Signups"
+										onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+										allowfullscreen="true" allow="geolocation; microphone; camera"
+										src="https://form.jotform.com/231222294317045" frameborder="0"
+										style="min-width:100%;max-width:100%;border:none;" scrolling="yes" height="300">
+									</iframe>
+									<script type="text/javascript">
 										var ifr = document.getElementById("JotFormIFrame-231222294317045");
 										if (ifr) {
 											var src = ifr.src;
 											var iframeParams = [];
 											if (window.location.href && window.location.href.indexOf("?") > -1) {
-											iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+												iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
 											}
 											if (src && src.indexOf("?") > -1) {
-											iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-											src = src.substr(0, src.indexOf("?"))
+												iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+												src = src.substr(0, src.indexOf("?"))
 											}
 											iframeParams.push("isIframeEmbed=1");
 											ifr.src = src + "?" + iframeParams.join('&');
 										}
-										window.handleIFrameMessage = function(e) {
+										window.handleIFrameMessage = function (e) {
 											if (typeof e.data === 'object') { return; }
 											var args = e.data.split(":");
 											if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
 											if (!iframe) { return; }
 											switch (args[0]) {
-											case "scrollIntoView":
-												iframe.scrollIntoView();
-												break;
-											case "setHeight":
-												iframe.style.height = args[1] + "px";
-												if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-												iframe.style.minHeight = args[1] + "px";
-												}
-												break;
-											case "collapseErrorPage":
-												if (iframe.clientHeight > window.innerHeight) {
-												iframe.style.height = window.innerHeight + "px";
-												}
-												break;
-											case "reloadPage":
-												window.location.reload();
-												break;
-											case "loadScript":
-												if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-												var src = args[1];
-												if (args.length > 3) {
-													src = args[1] + ':' + args[2];
-												}
-												var script = document.createElement('script');
-												script.src = src;
-												script.type = 'text/javascript';
-												document.body.appendChild(script);
-												break;
-											case "exitFullscreen":
-												if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-												else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-												else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-												else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-												else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-												break;
+												case "scrollIntoView":
+													iframe.scrollIntoView();
+													break;
+												case "setHeight":
+													iframe.style.height = args[1] + "px";
+													if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+														iframe.style.minHeight = args[1] + "px";
+													}
+													break;
+												case "collapseErrorPage":
+													if (iframe.clientHeight > window.innerHeight) {
+														iframe.style.height = window.innerHeight + "px";
+													}
+													break;
+												case "reloadPage":
+													window.location.reload();
+													break;
+												case "loadScript":
+													if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) { break; }
+													var src = args[1];
+													if (args.length > 3) {
+														src = args[1] + ':' + args[2];
+													}
+													var script = document.createElement('script');
+													script.src = src;
+													script.type = 'text/javascript';
+													document.body.appendChild(script);
+													break;
+												case "exitFullscreen":
+													if (window.document.exitFullscreen) window.document.exitFullscreen();
+													else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+													else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+													else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+													else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+													break;
 											}
 											var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-											if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-											var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-											iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+											if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+												var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
+												iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
 											}
 										};
-										window.isPermitted = function(originUrl, whitelisted_domains) {
+										window.isPermitted = function (originUrl, whitelisted_domains) {
 											var url = document.createElement('a');
 											url.href = originUrl;
 											var hostname = url.hostname;
 											var result = false;
-											if( typeof hostname !== 'undefined' ) {
-											whitelisted_domains.forEach(function(element) {
-												if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-													result = true;
-												}
-											});
-											return result;
+											if (typeof hostname !== 'undefined') {
+												whitelisted_domains.forEach(function (element) {
+													if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element) {
+														result = true;
+													}
+												});
+												return result;
 											}
 										};
 										if (window.addEventListener) {
@@ -347,166 +392,222 @@
 										} else if (window.attachEvent) {
 											window.attachEvent("onmessage", handleIFrameMessage);
 										}
-										</script>
+									</script>
+								</div>
+								<div>
+									<hr id="divider10">
+									<div id="image02" class="image">
+										<span class="frame"><img src="assets/images/image02.jpg" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
 									</div>
-									<div>
-										<hr id="divider10">
-										<div id="image02" class="image">
-											<span class="frame"><img src="assets/images/image02.jpg" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-										<hr id="divider15">
-									</div>
+									<hr id="divider15">
 								</div>
 							</div>
 						</div>
-						<div id="container05" data-scroll-id="faq" data-scroll-behavior="default" data-scroll-offset="0" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<hr id="divider25">
-									<h3 id="text03">FAQ</h3>
-									<div>
-										<p id="text33">Attendance</p>
-										<div id="list01">
-											<details>
-												<summary>What is the date of the Swift Accelerator Program? How long will the Swift Accelerator Program be?</summary>
-												The program will run over the summer of 2023, from 8 May to 31 August 2023.
-											</details>
-											<details>
-												<summary>Will all workshops be online or in-person? </summary>
-												Workshops will be in-person until end-June.<br>From June to August, lessons (and the final project) will be conducted online.
-											</details>
-											<details>
-												<summary>Do I have to attend all workshops in the Swift Accelerator Program? What if I am on holiday during the Swift Accelerator Program?</summary>
-												If you miss any sessions, please watch the video recordings/recaps, and complete the tasks given, to catch up with the curriculum.<br>We expect you to be able to attend 80% of lessons, with attending via recordings counted as 50% attendance.
-											</details>
-										</div>
+					</div>
+					<div id="container05" data-scroll-id="faq" data-scroll-behavior="default" data-scroll-offset="0"
+						class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<hr id="divider25">
+								<h3 id="text03">FAQ</h3>
+								<div>
+									<p id="text33">Attendance</p>
+									<div id="list01">
+										<details>
+											<summary>What is the date of the Swift Accelerator Program? How long will
+												the Swift Accelerator Program be?</summary>
+											The program will run over the summer of 2023, from 8 May to 31 August 2023.
+										</details>
+										<details>
+											<summary>Will all workshops be online or in-person? </summary>
+											Workshops will be in-person until end-June.<br>From June to August, lessons
+											(and the final project) will be conducted online.
+										</details>
+										<details>
+											<summary>Do I have to attend all workshops in the Swift Accelerator Program?
+												What if I am on holiday during the Swift Accelerator Program?</summary>
+											If you miss any sessions, please watch the video recordings/recaps, and
+											complete the tasks given, to catch up with the curriculum.<br>We expect you
+											to be able to attend 80% of lessons, with attending via recordings counted
+											as 50% attendance.
+										</details>
 									</div>
-									<div>
-										<p id="text33">Curriculum and Accreditation</p>
-										<div id="list01">
-											<details>
-												<summary>I don't know how to code.</summary>
-												Not to worry; we’ll get you started coding in Swift, Apple’s open-source programming language used by developers worldwide to build apps for iOS, iPadOS, and other platforms. We’ll assume that everyone is starting without coding experience, though if you have time, do try out the <b>Learn To Code</b> series on Swift Playgrounds on iPad — it’s a series of fun, interactive puzzles where your code can visually control a character’s movements.
-											</details>
-											<details>
-												<summary>Can we code in other coding languages?</summary>
-												We’ll be building apps in Swift. Knowing other languages is a plus — the concepts from many other languages, like C, Java, and Python, carry over into Swift. 
-											</details>
-											<details>
-												<summary>What resources will you share with us?</summary>
-												We’ll provide live lessons (face-to-face or online), lesson slides, pre-recorded lecture videos, tutorials, and quizzes. 
-											</details>
-											<details>
-												<summary>What accreditation will I get? What can I do with the Swift Accelerator accreditation once I have it?</summary>
-												You will receive a Swift Accelerator program certificate, to recognise your completion of the course, and successful publication of an app on the App Store.<br>We will also prepare you for the <a href="https://certiport.pearsonvue.com/Certifications/Apple/App-Dev-With-Swift/Overview.aspx">App Development in Swift - Associate certification</a>, offered by Certiport Pearson-Vue, developed with Apple.<br>
-												<ul>
-													<li>App Development with Swift certifications recognize students for their knowledge of Swift, Xcode, and app development tools. Students are expected to have completed at least 150 hours of instructional time before taking the certification exam. Students who pass the certification exam will earn a digital badge they can share in a resume, portfolio, email, or in online professional networks.</li>
-													<li>High school or higher education students who successfully complete the App Development with Swift Associate exam demonstrate knowledge of the impact of computing and apps on society, economies, and cultures while exploring iOS app development. This certification is aligned with Develop in Swift Explorations course made available for free from the Apple Book Store.</li>
-												</ul>
-											</details>
-											<details>
-												<summary>What happens if I don't want to do the Swift Accelerator Accreditation?</summary>
-												The Swift Accelerator accreditation is a prerequisite for program completion.
-											</details>
-										</div>
+								</div>
+								<div>
+									<p id="text33">Curriculum and Accreditation</p>
+									<div id="list01">
+										<details>
+											<summary>I don't know how to code.</summary>
+											Not to worry; we’ll get you started coding in Swift, Apple’s open-source
+											programming language used by developers worldwide to build apps for iOS,
+											iPadOS, and other platforms. We’ll assume that everyone is starting without
+											coding experience, though if you have time, do try out the <b>Learn To
+												Code</b> series on Swift Playgrounds on iPad — it’s a series of fun,
+											interactive puzzles where your code can visually control a character’s
+											movements.
+										</details>
+										<details>
+											<summary>Can we code in other coding languages?</summary>
+											We’ll be building apps in Swift. Knowing other languages is a plus — the
+											concepts from many other languages, like C, Java, and Python, carry over
+											into Swift.
+										</details>
+										<details>
+											<summary>What resources will you share with us?</summary>
+											We’ll provide live lessons (face-to-face or online), lesson slides,
+											pre-recorded lecture videos, tutorials, and quizzes.
+										</details>
+										<details>
+											<summary>What accreditation will I get? What can I do with the Swift
+												Accelerator accreditation once I have it?</summary>
+											You will receive a Swift Accelerator program certificate, to recognise your
+											completion of the course, and successful publication of an app on the App
+											Store.<br>We will also prepare you for the <a
+												href="https://certiport.pearsonvue.com/Certifications/Apple/App-Dev-With-Swift/Overview.aspx">App
+												Development in Swift - Associate certification</a>, offered by Certiport
+											Pearson-Vue, developed with Apple.<br>
+											<ul>
+												<li>App Development with Swift certifications recognize students for
+													their knowledge of Swift, Xcode, and app development tools. Students
+													are expected to have completed at least 150 hours of instructional
+													time before taking the certification exam. Students who pass the
+													certification exam will earn a digital badge they can share in a
+													resume, portfolio, email, or in online professional networks.</li>
+												<li>High school or higher education students who successfully complete
+													the App Development with Swift Associate exam demonstrate knowledge
+													of the impact of computing and apps on society, economies, and
+													cultures while exploring iOS app development. This certification is
+													aligned with Develop in Swift Explorations course made available for
+													free from the Apple Book Store.</li>
+											</ul>
+										</details>
+										<details>
+											<summary>What happens if I don't want to do the Swift Accelerator
+												Accreditation?</summary>
+											The Swift Accelerator accreditation is a prerequisite for program
+											completion.
+										</details>
 									</div>
+								</div>
 
-									<div>
-										<p id="text33">Equipment</p>
-										<div id="list01">
-											<details>
-												<summary>What Mac model are we winning?</summary>
-												MacBook Air with M2 chip (8-core CPU and 8-core GPU), with 8GB of RAM and 256GB of storage. 
-											</details>
-											<details>
-												<summary>Can I exchange the Mac for an iPhone/iPad?</summary>
-												No.
-											</details>
-											<details>
-												<summary>Will the Mac be my property? </summary>
-												Yes, the MacBook is yours to keep, if you complete the course, and pass the Swift certification test. 
-											</details>
-										</div>
+								<div>
+									<p id="text33">Equipment</p>
+									<div id="list01">
+										<details>
+											<summary>What Mac model are we winning?</summary>
+											MacBook Air with M2 chip (8-core CPU and 8-core GPU), with 8GB of RAM and
+											256GB of storage.
+										</details>
+										<details>
+											<summary>Can I exchange the Mac for an iPhone/iPad?</summary>
+											No.
+										</details>
+										<details>
+											<summary>Will the Mac be my property? </summary>
+											Yes, the MacBook is yours to keep, if you complete the course, and pass the
+											Swift certification test.
+										</details>
 									</div>
+								</div>
 
-									<div>
-										<p id="text33">App Development</p>
-										<div id="list01">
-											<details>
-												<summary>Will we create fully functional apps?</summary>
-												Yes, you will work in teams to create a fully functional app, to be submitted to the App Store for review, before it gets published.
-											</details>
-											<details>
-												<summary>How will my app be listed on the App Store? Do I have to pay? </summary>
-												The organisers will create a single account for all apps to be listed on the App Store, and the organisers will pay the annual fee for the app to be listed on the store, for as long as the program runs. You will not need to have a paid Developer account, unless you choose to do so.
-											</details>
-											<details>
-												<summary>Can we charge for our apps? Who gets the money if we charge? </summary>
-												All apps hosted by the organisers will be listed as free for download. If you want to charge for your app, you can initiate a transfer of the app to your own paid Developer account, for which you have to set up and pay the annual fee to Apple. This way, you will receive all payments for your app directly from Apple (after any App Store fees). 
-											</details>
-											<details>
-												<summary>Who will own my app IP?</summary>
-												You will own all intellectual property related to your app. On the App Store listing, the copyright will be to you and your team members’ names, or any legal entity of your choosing.    
-											</details>
-										</div>
+								<div>
+									<p id="text33">App Development</p>
+									<div id="list01">
+										<details>
+											<summary>Will we create fully functional apps?</summary>
+											Yes, you will work in teams to create a fully functional app, to be
+											submitted to the App Store for review, before it gets published.
+										</details>
+										<details>
+											<summary>How will my app be listed on the App Store? Do I have to pay?
+											</summary>
+											The organisers will create a single account for all apps to be listed on the
+											App Store, and the organisers will pay the annual fee for the app to be
+											listed on the store, for as long as the program runs. You will not need to
+											have a paid Developer account, unless you choose to do so.
+										</details>
+										<details>
+											<summary>Can we charge for our apps? Who gets the money if we charge?
+											</summary>
+											All apps hosted by the organisers will be listed as free for download. If
+											you want to charge for your app, you can initiate a transfer of the app to
+											your own paid Developer account, for which you have to set up and pay the
+											annual fee to Apple. This way, you will receive all payments for your app
+											directly from Apple (after any App Store fees).
+										</details>
+										<details>
+											<summary>Who will own my app IP?</summary>
+											You will own all intellectual property related to your app. On the App Store
+											listing, the copyright will be to you and your team members’ names, or any
+											legal entity of your choosing.
+										</details>
 									</div>
-									<ul id="buttons06" class="buttons">
-										<li>
-											<a href="/theteam.html" class="button n01">Meet the Team</a>
-										</li>
-									</ul>
+								</div>
+								<ul id="buttons06" class="buttons">
+									<li>
+										<a href="/theteam.html" class="button n01">Meet the Team</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr id="divider09">
+				</section>
+				<footer id="footer">
+					<div id="container06" class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<hr id="divider03">
+								<p id="text01">Made Possible by:</p>
+							</div>
+						</div>
+					</div>
+					<div id="container03" class="container columns full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<div>
+									<div id="image01" class="image">
+										<span class="frame"><img src="assets/images/image01.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+								</div>
+								<div>
+									<div id="image03" class="image">
+										<span class="frame"><img src="assets/images/image03.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+								</div>
+								<div>
+									<div id="image04" class="image">
+										<span class="frame"><img src="assets/images/image04.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
+								</div>
+								<div>
+									<div id="image05" class="image">
+										<span class="frame"><img src="assets/images/image05.png" alt=""
+												oncontextmenu="return false;" ondragstart="return false;" /></span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<hr id="divider09">
-					</section>
-					<footer id="footer">
-						<div id="container06" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<hr id="divider03">
-									<p id="text01">Made Possible by:</p>
-								</div>
+					</div>
+					<div id="container07" class="container default full screen">
+						<div class="wrapper">
+							<div class="inner">
+								<p id="text04">For any support, please contact <a
+										href="mailto:hello@swiftuae.org">hello@swiftuae.org</a>. <a
+										href="/privacy.html">Privacy policy</a>.</p>
+								<hr id="divider04">
 							</div>
 						</div>
-						<div id="container03" class="container columns full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<div>
-										<div id="image01" class="image">
-											<span class="frame"><img src="assets/images/image01.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-									</div>
-									<div>
-										<div id="image03" class="image">
-											<span class="frame"><img src="assets/images/image03.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-									</div>
-									<div>
-										<div id="image04" class="image">
-											<span class="frame"><img src="assets/images/image04.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-									</div>
-									<div>
-										<div id="image05" class="image">
-											<span class="frame"><img src="assets/images/image05.png" alt="" oncontextmenu="return false;" ondragstart="return false;" /></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="container07" class="container default full screen">
-							<div class="wrapper">
-								<div class="inner">
-									<p id="text04">Contact: hello@swiftuae.org</p>
-									<hr id="divider04">
-								</div>
-							</div>
-						</div>
-					</footer>
-				</div>
+					</div>
+				</footer>
 			</div>
 		</div>
-		<script src="assets/main.js"></script>
-	</body>
+	</div>
+	<script src="assets/main.js"></script>
+</body>
+
 </html>
